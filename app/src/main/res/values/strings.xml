@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Bird Breeders Diary</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_budgies">Budgies</string>
+    <string name="title_activity_flock">Flock</string>
+    <string name="title_activity_add_bird">AddBird</string>
+    <string name="title_activity_mutations">Mutations</string>
+</resources>

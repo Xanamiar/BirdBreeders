@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jwknight.birdbreedersdiary.AddBird"
+    tools:showIn="@layout/activity_add_bird"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Adding a Bird to Flock"
+        android:id="@+id/abtf"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:background="#ffffff"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/_ID"
+        android:layout_alignLeft="@+id/_ID"
+        android:layout_alignStart="@+id/_ID" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/_ID"
+        android:layout_below="@+id/abtf"
+        android:layout_alignLeft="@+id/abtf"
+        android:layout_alignStart="@+id/abtf"
+        android:layout_marginTop="31dp"
+        android:background="#ffffff"
+        android:text="ID Number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/DOB"
+        android:layout_marginTop="31dp"
+        android:background="#ffffff"
+        android:text="DOB"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male    "
+        android:id="@+id/male"
+        android:background="#ffffff"
+        android:checked="false"
+        android:layout_below="@+id/DOB"
+        android:layout_alignLeft="@+id/DOB"
+        android:layout_alignStart="@+id/DOB"
+        android:layout_marginTop="34dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female    "
+        android:id="@+id/female"
+        android:background="#ffffff"
+        android:checked="false"
+        android:layout_alignTop="@+id/male"
+        android:layout_alignRight="@+id/DOB"
+        android:layout_alignEnd="@+id/DOB" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mutations"
+        android:id="@+id/mutations"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/male"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Bird to Flock"
+        android:id="@+id/addtoflock"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp" />
+</RelativeLayout>
